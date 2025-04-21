@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- 17/04/2025
+
+Consulta de Dados: 
+"Clientes", "Pedidos", "ItensPedidos" e "Produtos"
+
+Linguagens utilizadas:
+HTML (Marcação), CSS (Estilo), JS (Interatividade) e PY (Dados)
+
+Index:
+Cabeçalho [Deixar parecido com o site original], Lista de pedidos [Código, Nome_Cliente, Data_Pedido e Valor_Pedido]
+ 
+-->
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Sistema Lift - Pedidos</title>
+        <link rel="stylesheet" href="..\css\style.css">
+    </head>
+
+    <body>
+        <div id="Topo" class="Topo">
+            <div class="Container_Cabecalho"> <!-- Menu e Logo -->
+                <ul class="Menu_Esq">
+                    <li><a href="index.html">CONSULTA GERAL</a></li>
+                    <li><a href="pedidos.html">PEDIDOS</a></li>
+                </ul>
+                <div class="Logo"><img src="..\img\logo_branca.png"></div>
+                <ul class="Menu_Dir">
+                    <li><a href="produtos.html">PRODUTOS</a></li>
+                    <li><a href="clientes.html">CLIENTES</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="Barra"></div>
+        <div id="Pedidos">
+            <h2>Lista de Pedidos</h2>
+            <table id="tabela">
+                <tr>
+                    <th class="color">ID Pedido</th>
+                    <th class="color">ID Cliente</th>
+                    <th class="color">Data</th>
+                </tr>
+            </table>
+        </div>
+    <script src="..\js\base.js"></script> <!-- Chamada do arquivo Get, onde está o vinculo entre a API -->
+    <script>DadosPedidos();</script>
+    </body>
+
+</html>
